@@ -25,8 +25,8 @@ function App() {
 
   const copyPasswordToClipboard = useCallback(() => {
     if (passwordRef.current) {
-      passwordRef.current.select()
-      passwordRef.current.setSelectionRange(0, 100)
+      passwordRef.current?.select()
+      passwordRef.current?.setSelectionRange(0, 100)
       window.navigator.clipboard.writeText(password)
       // alert("Password copied to clipboard!")
     }
@@ -51,7 +51,7 @@ function App() {
           />
           <button
             onClick={copyPasswordToClipboard}
-            className="outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0"
+            className="outline-none bg-blue-700 hover:bg-blue-600 text-white px-3 py-0.5 shrink-0"
           >
             Copy
           </button>
