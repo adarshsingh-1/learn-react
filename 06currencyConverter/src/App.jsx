@@ -31,7 +31,7 @@ function App() {
     <div className="w-full h-screen bg-gray-100 flex items-center justify-center">
       <div className="w-full h-[90%] max-h-[700px] flex rounded-lg overflow-hidden shadow-2xl">
         
-        {/* Left - Image */}
+        
         <div className="w-1/2 h-full">
           <img
             src="https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -40,7 +40,7 @@ function App() {
           />
         </div>
 
-        {/* Right - Converter */}
+        
         <div className="w-1/2 h-full p-10 bg-white flex items-center justify-center">
           <form
             onSubmit={(e) => {
@@ -49,7 +49,7 @@ function App() {
             }}
             className="w-full max-w-md space-y-6"
           >
-            {/* From InputBox */}
+            
             <InputBox
               label="From"
               amount={amount}
@@ -60,7 +60,7 @@ function App() {
               isDisabled={false}
             />
 
-            {/* Swap Button */}
+            
             <div className="text-center">
               <button
                 type="button"
@@ -71,7 +71,7 @@ function App() {
               </button>
             </div>
 
-            {/* To InputBox */}
+            
             <InputBox
               label="To"
               amount={convertedAmount}
@@ -82,7 +82,7 @@ function App() {
               isDisabled={true}
             />
 
-            {/* Convert Button */}
+            
             <button
               type="submit"
               className="w-full bg-blue-600 text-white text-lg font-medium px-4 py-3 rounded-md hover:bg-blue-700 transition"
